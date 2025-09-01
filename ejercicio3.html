@@ -11,5 +11,221 @@
     ></script>
     <title>Ejercicio 3</title>
   </head>
-  <body></body>
+  <body class="overflow-x-hidden">
+    <nav class="w-screen bg-green-800 p-4 ps-10 text-white">
+      <span class="font-bold">Blog Ambiental</span>
+    </nav>
+    <div class="w-screen flex flex-col justify-center items-center pb-10">
+      <div class="text-green-800 text-4xl font-bold mt-10 text-center">
+        ¡Bienvenido al mejor blog ambiental a nivel mundial!
+      </div>
+      <div class="w-1/2 mt-10">
+        Esto es un blog ambiental donde podrás encontrar artículos, noticias y
+        recursos sobre temas ambientales. Nuestro objetivo es crear conciencia
+        sobre la importancia de cuidar nuestro planeta y promover prácticas
+        sostenibles. Únete a nosotros en este viaje hacia un futuro más verde y
+        saludable. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Deserunt alias odio atque soluta, provident nihil ipsa iusto unde
+        expedita illum incidunt minus perspiciatis, molestias maiores aspernatur
+        explicabo omnis totam modi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quasi doloribus itaque architecto sequi autem vero
+        amet, animi provident earum minima, facilis dolores eius non optio quas
+        officia molestiae dignissimos beatae.
+      </div>
+      <button
+        class="bg-green-800 rounded text-white p-3 cursor-pointer hover:bg-green-700 mt-5"
+        id="leer-mas"
+      >
+        Leer más
+      </button>
+      <div class="w-1/2 hidden contenido-adicional">
+        Proteger el medio ambiente es responsabilidad de todos, cada uno desde
+        casa, en el trabajo o centro de estudios, de la sociedad en general. Las
+        empresas también cumplen un rol importante como promotores de buenos
+        hábitos y tienen un rol de liderar con el ejemplo para promover el
+        sentido de responsabilidad ambiental en beneficio de todos. Como
+        individuos tenemos la misión de sumarnos a estos buenos ejemplos y
+        ponerlos en práctica, porque hasta las más pequeñas acciones generan un
+        gran impacto. El cuidado del medioambiente está en nuestras manos y es
+        más sencillo de lo que muchas personas piensan. Contribuir con pequeñas
+        acciones se convertirán a largo plazo en grandes cambios para todos los
+        seres vivos que habitamos el planeta.
+      </div>
+      <button
+        class="bg-green-800 rounded text-white p-3 cursor-pointer hover:bg-green-700 mt-5 contenido-adicional hidden"
+        id="leer-menos"
+      >
+        Leer menos
+      </button>
+      <div class="text-green-800 text-2xl font-bold mt-10 text-center">
+        Preguntas frecuentes (FAQ)
+      </div>
+      <div class="w-1/2 mt-5">
+        <div
+          class="text-center text-lg font-bold bg-green-600 p-2 border-solid border-green-800 border-2 cursor-pointer hover:bg-green-500"
+          id="pregunta1"
+        >
+          ¿Por qué es importante cuidar el medio ambiente?
+        </div>
+        <div
+          class="hidden bg-green-100 border-solid border-green-800 border-t-0 border-2 p-2"
+          id="respuesta1"
+        >
+          Cuidar el medio ambiente es crucial para preservar la biodiversidad,
+          garantizar recursos naturales para futuras generaciones y mantener el
+          equilibrio de los ecosistemas.
+        </div>
+        <div
+          class="text-center text-lg font-bold bg-green-600 p-2 border-solid border-green-800 border-2 cursor-pointer hover:bg-green-500 mt-5"
+          id="pregunta2"
+        >
+          ¿Qué acciones puedo tomar para contribuir al cuidado del medio
+          ambiente?
+        </div>
+        <div
+          class="hidden bg-green-100 border-solid border-green-800 border-t-0 border-2 p-2"
+          id="respuesta2"
+        >
+          Puedes reducir el consumo de plástico, reciclar, usar transporte
+          sostenible, conservar agua y energía, y apoyar iniciativas ambientales
+          locales.
+        </div>
+        <div
+          class="text-center text-lg font-bold bg-green-600 p-2 border-solid border-green-800 border-2 cursor-pointer hover:bg-green-500 mt-5"
+          id="pregunta3"
+        >
+          ¿Cómo puedo involucrarme en actividades ambientales en mi comunidad?
+        </div>
+        <div
+          class="hidden bg-green-100 border-solid border-green-800 border-t-0 border-2 p-2"
+          id="respuesta3"
+        >
+          Puedes unirte a grupos locales de conservación, participar en campañas
+          de limpieza, asistir a talleres y eventos ambientales, y colaborar con
+          organizaciones que promuevan la sostenibilidad.
+        </div>
+      </div>
+      <div class="text-green-800 text-2xl font-bold mt-10 text-center">
+        Donaciones
+      </div>
+      <button
+        class="bg-green-800 rounded text-white p-3 cursor-pointer hover:bg-green-700 mt-5"
+        id="donar"
+      >
+        Quiero donar
+      </button>
+      <div class="w-full justify-center flex flex-col items-center">
+        <div
+          class="w-full p-10 grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 hidden"
+          id="donaciones"
+        >
+          <div
+            class="rounded flex flex-col shadow-xl bg-green-100 p-5 items-center"
+          >
+            <img
+              src="https://www.siberzone.es/blog-sistemas-ventilacion/wp-content/uploads/2019/08/ahorrar-agua.jpg"
+              alt="Ahorrar agua"
+              class="h-48 object-cover"
+            />
+            <div class="text-center text-lg mt-2">Ahorrar agua - $10</div>
+            <button
+              class="bg-green-800 rounded text-white p-3 cursor-pointer hover:bg-green-700 mt-5"
+            >
+              Donar
+            </button>
+          </div>
+          <div
+            class="rounded flex flex-col shadow-xl bg-green-100 p-5 items-center"
+          >
+            <img
+              src="https://www.unotv.com/uploads/2023/02/consejos-energia-111134.jpg"
+              alt="Ahorrar energía"
+              class="h-48 object-cover"
+            />
+            <div class="text-center text-lg mt-2">Ahorrar energía - $50</div>
+            <button
+              class="bg-green-800 rounded text-white p-3 cursor-pointer hover:bg-green-700 mt-5"
+            >
+              Donar
+            </button>
+          </div>
+          <div
+            class="rounded flex flex-col shadow-xl bg-green-100 p-5 items-center"
+          >
+            <img
+              src="https://incinerox.com.ec/wp-content/uploads/Como-organizar-mi-reciclaje-1-1920x1024.webp"
+              alt="Reciclar"
+              class="h-48 object-cover"
+            />
+            <div class="text-center text-lg mt-2">Ayudar a reciclar - $20</div>
+            <button
+              class="bg-green-800 rounded text-white p-3 cursor-pointer hover:bg-green-700 mt-5"
+            >
+              Donar
+            </button>
+          </div>
+        </div>
+        <div class="w-1/2 mt-10 hidden" id="tabla-donaciones-contenedor">
+          <h2 class="text-green-800 text-2xl font-bold mb-3 text-center">
+            Mis Donaciones
+          </h2>
+          <table class="w-full border border-green-800">
+            <thead class="bg-green-100">
+              <tr>
+                <th class="border border-green-800 p-2">Donación</th>
+                <th class="border border-green-800 p-2">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-donaciones"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#leer-mas").click(function () {
+        $(".contenido-adicional").show();
+        $("#leer-mas").hide();
+      });
+      $("#leer-menos").click(function () {
+        $(".contenido-adicional").hide();
+        $("#leer-mas").show();
+      });
+      $("#pregunta1").click(function () {
+        $("#respuesta1").toggle();
+      });
+      $("#pregunta2").click(function () {
+        $("#respuesta2").toggle();
+      });
+      $("#pregunta3").click(function () {
+        $("#respuesta3").toggle();
+      });
+      $("#donar").click(function () {
+        $("#donaciones").removeClass("hidden");
+        $("#donar")
+          .addClass("bg-gray-400 cursor-not-allowed")
+          .removeClass("hover:bg-green-700 cursor-pointer bg-green-800");
+      });
+      $("#donaciones button").click(function () {
+        let titulo = $(this)
+          .closest("div.flex.flex-col")
+          .find("div.text-center")
+          .first()
+          .text();
+        let fila = `<tr>
+                <td class="border border-green-800 p-2">${titulo}</td>
+                <td class="border border-green-800 m-0 p-2 text-center">
+                  <button class="bg-red-500 cursor-pointer text-white px-2 py-1 rounded btn-quitar hover:bg-red-400">Quitar</button>
+                </td>
+              </tr>`;
+        $("#tabla-donaciones").append(fila);
+        $("#tabla-donaciones-contenedor").show();
+      });
+      $(document).on("click", ".btn-quitar", function () {
+        $(this).closest("tr").remove();
+        if ($("#tabla-donaciones tr").length === 0) {
+          $("#tabla-donaciones-contenedor").hide();
+        }
+      });
+    </script>
+  </body>
 </html>
