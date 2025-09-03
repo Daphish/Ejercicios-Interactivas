@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="product-name">Producto 1</td>
+                <td>
+                    <button class="p-4 rounded text-white bg-purple-800 btn btn-edit">Editar</button>
+                    <button class="p-4 rounded text-white bg-red-700 btn btn-delete" id="btn-delete-1">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="product-name">Producto 2</td>
+                <td>
+                    <button class="p-4 rounded text-white bg-purple-800 btn btn-edit">Editar</button>
+                    <button class="p-4 rounded text-white bg-red-700 btn btn-delete" id="btn-delete-2">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="product-name">Producto 3</td>
+                <td>
+                    <button class="p-4 rounded text-white bg-purple-800 btn btn-edit">Editar</button>
+                    <button class="p-4 rounded text-white bg-red-700 btn btn-delete" id="btn-delete-3">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="text" id="input-text" class="rounded border border-black-800 p-1" value="127">
+    <button id="btn-obtener" class="p-4 rounded text-white bg-blue-700">Obtener valor</button>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('.btn-edit').click(function() {
+            alert('Editar producto');
+        });
+
+        $('#btn-delete-1').click(function() {
+            <!-- $('#btn-delete-1').removeClass('bg-red-700').addClass('bg-gray-600'); -->
+            $(this).toggleClass('bg-red-700 bg-gray-600');
+        });
+        $('.product-name').on('click', function() {
+            alert($(this).text());
+        });
+        $('#btn-obtener').on('click', function () {
+            alert($('#input-text').val());
+        });
+    });
+</script>
+</html>
